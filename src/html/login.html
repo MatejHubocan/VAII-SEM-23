@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<div class="menu">
+    <a href="landing.html">Home</a>
+    <a href="login.html">Log in</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="overhead">
+    We are happy to see you!
+</div>
+
+<div class="loginWindow">
+    <div class="logo">
+        <img src="https://th.bing.com/th/id/R.ad9f5871b1eda962b805e501ea7d35fc?rik=GtgEL9TlX7iQzg&pid=ImgRaw&r=0" alt="logo img">
+    </div>
+
+    <div class="title">
+        DOTA2Hub account
+    </div>
+
+    <form action="../php/auth.php" method="post">
+        <div class="username">
+            <label for="username"></label>
+            <input type="text" name="username" id="username" placeholder="Username">
+        </div>
+
+        <div class="password">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+
+        <input class="button" type="submit" value="LOG IN">
+    </form>
+
+    <button class="button" onclick="location.href='../php/register.php'" >
+        REGISTER
+    </button>
+</div>
+
+<div class="foot">
+    Author: M. Hubocan<br>
+    Contact: some@email.com
+</div>
+</body>
+</html>
